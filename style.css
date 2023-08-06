@@ -10,18 +10,22 @@ nav {
   top: 0;
   display: flex;
   width: 100%;
+  z-index: 2;
   align-items: center;
-  padding: 30px 100px;
-  background-color: rgba(128, 128, 128, 0.6);
+  padding: 15px 100px;
+  flex-wrap: nowrap;
+  background: #292b2c;
   justify-content: space-between;
 }
-
+/* 
+.scroll-down nav {
+  top: -100px;
+} */
 #nav-logo {
   color: #fff;
   font-weight: 700;
   text-decoration: none;
   font-size: 2rem;
-  text-transform: uppercase;
   letter-spacing: 2px;
 }
 
@@ -43,7 +47,8 @@ nav ul li a:hover {
   text-decoration: none;
   padding: 6px 15px;
   background: #fff;
-  color: gray;
+  color: #292b2c;
+  transition: 0.2s ease-in-out;
 }
 
 .header-title {
@@ -54,6 +59,7 @@ nav ul li a:hover {
 #scroll-wrapper {
   height: 100vh;
   width: 100vw;
+  position: absolute;
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
@@ -91,4 +97,29 @@ section {
   padding: 2rem;
   background-color: #f1f1f1;
   color: gray;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+  }
+  nav ul {
+    margin: 16px 0px;
+  }
+  nav ul li {
+    margin: 6px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+  }
 }
