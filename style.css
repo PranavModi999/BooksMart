@@ -5,10 +5,14 @@
 }
 
 nav {
+  position: sticky;
+  transition: top 0.3s ease-in-out;
+  top: 0;
   display: flex;
   width: 100%;
   align-items: center;
   padding: 30px 100px;
+  background-color: rgba(128, 128, 128, 0.6);
   justify-content: space-between;
 }
 
@@ -24,6 +28,22 @@ nav {
 nav ul {
   display: flex;
   justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  padding: 6px 15px;
+  background: #fff;
+  color: gray;
 }
 
 .header-title {
@@ -45,7 +65,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   transform-style: preserve-3d;
   z-index: -1;
 }
@@ -55,7 +75,7 @@ header {
   position: absolute;
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
   z-index: -1;
 }
 .background {
