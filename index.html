@@ -9,7 +9,7 @@
   <body>
     <div id="scroll-wrapper">
       <nav>
-        <a id="nav-logo">LitHaven</a>
+        <a class="nav-logo">LitHaven</a>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Bestsellers</a></li>
@@ -19,16 +19,28 @@
       </nav>
       <header>
         <img
-          src="images/books-shelf.jpg"
-          class="background"
-          alt="parallax-background"
-        />
-        <img
-          src="images/books-row-2.png"
+          src="images/books-foreground.png"
           alt="parallax-foreground"
           class="foreground"
         />
-        <h1 class="header-title">Welcome!</h1>
+        <img
+          class="background"
+          sizes="(max-width: 1400px) 100vw, 1400px"
+          srcset="
+            images/books-background/books-shelf_fc8scg_c_scale,w_200.jpg   200w,
+            images/books-background/books-shelf_fc8scg_c_scale,w_656.jpg   656w,
+            images/books-background/books-shelf_fc8scg_c_scale,w_926.jpg   926w,
+            images/books-background/books-shelf_fc8scg_c_scale,w_1183.jpg 1183w,
+            images/books-background/books-shelf_fc8scg_c_scale,w_1292.jpg 1292w,
+            images/books-background/books-shelf_fc8scg_c_scale,w_1400.jpg 1400w
+          "
+          src="images/books-background/books-shelf_fc8scg_c_scale,w_1400.jpg"
+          alt=""
+        />
+        <div class="header-title">
+          <img class="logo-img" src="images/logo.png" alt="LOGO" srcset="" />
+          <h1>Welcome!</h1>
+        </div>
       </header>
       <section>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo illum
@@ -64,6 +76,21 @@
         consequatur eligendi nulla, dolor itaque sequi nam perferendis saepe
         ipsum tenetur fuga, aliquid laborum aliquam, aut quia.
       </section>
+      <footer>
+        <hr class="footer-top-line" />
+        <img
+          class="logo-img invert"
+          src="images/logo.png"
+          alt="LOGO"
+          srcset=""
+        />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Bestsellers</a></li>
+          <li><a href="#">Club</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </footer>
     </div>
   </body>
 </html>
