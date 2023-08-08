@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="scroll-wrapper">
+      <nav>
+        <a class="nav-logo" href="/index.html">LitHaven</a>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/best_seller.html">Best sellers</a></li>
+          <li><a href="/club.html">Club</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+      <header>
+        <img
+          src="images/books-foreground.png"
+          alt="parallax-foreground"
+          class="foreground"
+        />
+        <img
+          class="background"
+          sizes="(max-width: 1400px) 100vw, 1400px"
+          srcset="
+            images/books-background/books-shelf_fc8scg_c_scale,w_200.jpg   200w,
+            images/books-background/books-shelf_fc8scg_c_scale,w_656.jpg   656w,
+            images/books-background/books-shelf_fc8scg_c_scale,w_926.jpg   926w,
+            images/books-background/books-shelf_fc8scg_c_scale,w_1183.jpg 1183w,
+            images/books-background/books-shelf_fc8scg_c_scale,w_1292.jpg 1292w,
+            images/books-background/books-shelf_fc8scg_c_scale,w_1400.jpg 1400w
+          "
+          src="images/books-background/books-shelf_fc8scg_c_scale,w_1400.jpg"
+          alt=""
+        />
+        <div class="header-title">
+          <!-- attribution -->
+          <!-- <a href="https://www.freepik.com/icon/night-club_8413879#fromView=search&term=club&page=1&position=0">Icon by ppangman</a> -->
+          <img class="logo-img" src="images/id-card.png" alt="LOGO" srcset="" />
+          <h1>About us</h1>
+        </div>
+      </header>
+      <section class="undecided"></section>
+      <section class="undecided" style="background: lightpink"></section>
+      <section class="undecided"></section>
+
+      <footer>
+        <hr class="footer-top-line" />
+        <div class="main-footer">
+          <div class="left-column">
+            <h4>Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/best_seller.html">Bestsellers</a></li>
+              <li><a href="/club.html">Club</a></li>
+              <li><a href="/about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="middle-column">
+            <img
+              class="logo-img invert"
+              <!-- src="images/logo.png" -->
+              alt="LOGO"
+              srcset=""
+            />
+            <a class="nav-logo" href="/index.html">LitHaven</a>
+          </div>
+          <div class="right-column">
+            <h4>Contact Us</h4>
+            <div>
+              <p>Email: info@lithaven.com</p>
+              <p>Phone: (123) 456-7890</p>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-top-line" />
+        <p class="copyrights">
+          &copy; 2023 Group 2 | LitHaven | All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
