@@ -262,6 +262,7 @@ footer {
 .reader-info {
   margin-top: 12px;
   position: relative;
+  /* animation: rotateQuotes 15s infinite; */
 }
 .reader-name {
   text-align: end;
@@ -470,5 +471,36 @@ footer {
   }
   .genre-container {
     grid-template-columns: 1fr;
+  }
+}
+.reader-info {
+  animation: rotateQuotes 8s infinite linear;
+  opacity: 0; /* Hide all initially */
+}
+
+.type__1 {
+  animation-delay: 0s;
+}
+
+.type__2 {
+  animation-delay: 3s;
+}
+
+.type__3 {
+  animation-delay: 6s;
+}
+
+@keyframes rotateQuotes {
+  0% {
+    transform: translateY(100%);
+  }
+  10%,
+  90% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
   }
 }
